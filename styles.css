@@ -1,10 +1,10 @@
 /* Apple公式サイトっぽいフォント */
-@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 body {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
     margin: 0;
-    padding: 60px 20px 20px; /* 上に余白を作ってタブと被らないように */
+    padding: calc(env(safe-area-inset-top, 20px) + 40px) 20px 20px;
     background-color: black; /* デフォルトはダークモード */
     color: white;
     height: 100vh;
@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: flex-start; /* 上揃え */
     align-items: flex-start;
-    overflow: hidden; /* スクロールを無効化 */
+    overflow-y: auto; /* 必要ならスクロールできるように */
 }
 
 /* ライトモード（サブ垢） */
@@ -23,16 +23,16 @@ body {
 
 /* アカウント名 */
 h1 {
-    font-size: 2rem; /* 小さめに調整 */
+    font-size: 1.8rem; /* 少し小さめ */
     font-weight: bold;
-    margin-bottom: 10px; /* プロフィールとの間隔 */
+    margin-bottom: 15px; /* プロフィールとの間隔 */
 }
 
 /* プロフィール */
 p {
     font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 20px; /* リンクとの間隔 */
+    margin-bottom: 15px; /* リンクとの間隔 */
 }
 
 /* リンクのスタイル（見た目は普通のテキスト） */
@@ -41,7 +41,7 @@ a {
     text-decoration: none;
     color: inherit;
     display: block; /* 1つずつ改行 */
-    margin-bottom: 0px; /* Twitterとインスタの間隔を最小限に */
+    margin-bottom: 8px; /* リンクの間隔を少し開ける */
 }
 
 a:visited, a:active {
@@ -56,7 +56,7 @@ button {
     border: none;
     color: inherit;
     cursor: pointer;
-    padding: 0;
+    padding: 5px 10px; /* 押しやすく */
     text-align: left;
     display: block; /* 1つずつ改行 */
     margin-top: 20px; /* リンクとの間隔 */
@@ -65,3 +65,4 @@ button {
 button:focus {
     outline: none;
 }
+
