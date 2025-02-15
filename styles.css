@@ -41,7 +41,7 @@ a {
     text-decoration: none;
     color: inherit;
     display: block; /* 1つずつ改行 */
-    margin-bottom: 5px; /* Twitterとインスタの間隔を最小限に */
+    margin-bottom: 0px; /* Twitterとインスタの間隔を最小限に */
 }
 
 a:visited, a:active {
