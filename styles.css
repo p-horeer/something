@@ -4,7 +4,7 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
-    padding: 5vh 4vw 4vw;
+    padding: 5vmin 4vmin; /* 画面サイズに応じた余白 */
     background-color: black;
     color: white;
     min-height: 100vh;
@@ -24,20 +24,20 @@ body {
 /* アカウント名 */
 h1 {
     font-size: 7vmin;
-    margin-bottom: 2vmin;
+    margin-bottom: 3vmin; /* 画面サイズに応じた間隔 */
 }
 
 /* プロフィール */
 .profile-text {
     font-size: 4vmin;
-    margin-bottom: 2vmin;
+    margin-bottom: 3vmin;
 }
 
 /* リンクをまとめるコンテナ */
 .link-container {
     display: flex;
     flex-direction: column;
-    gap: 0; /* flexの隙間をなくす */
+    gap: 1vmin; /* 画面サイズに応じたリンク間の間隔 */
 }
 
 /* pタグの余白を完全になくす */
@@ -48,11 +48,11 @@ h1 {
 
 /* リンクのスタイル */
 a {
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     text-decoration: none;
     color: inherit;
-    display: block; /* 1行ずつ表示 */
-    line-height: 1; /* 行間を詰める */
+    display: block;
+    line-height: 1.2; /* 画面サイズに応じた最小限の行間 */
 }
 
 a:visited, a:active {
@@ -61,7 +61,7 @@ a:visited, a:active {
 
 /* ボタン */
 button {
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     background: none;
     border: none;
     color: inherit;
