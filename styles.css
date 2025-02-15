@@ -1,0 +1,61 @@
+/* Apple公式サイトっぽいフォント */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP", sans-serif;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden; /* スクロール無効 */
+}
+
+/* ダークモード（本垢） */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* ライトモード（サブ垢） */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* アカウント名 */
+h1 {
+    font-size: 2rem; /* 小さめに調整 */
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* プロフィールのテキスト */
+.profile-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+/* リンク */
+a {
+    text-decoration: none; /* 下線なし */
+    color: inherit; /* 本文と同じ色 */
+    font-size: 1rem;
+}
+
+/* クリックしてもリンクの色を変えない */
+a:visited, a:active {
+    color: inherit;
+}
+
+/* ボタン */
+#switchButton {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: inherit;
+    margin-top: 1.5em;
+}
+
+/* ボタンとリンクの間隔 */
+.spacer {
+    height: 20px; /* 空白 */
+}
