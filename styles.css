@@ -1,61 +1,82 @@
-/* Apple公式サイトっぽいフォント */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP", sans-serif;
+/* Apple公式のフォントを使用 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden; /* スクロール禁止 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
     padding: 20px;
-    overflow: hidden; /* スクロール無効 */
 }
 
-/* ダークモード（本垢） */
+/* ダークモードとライトモードの切り替え */
 .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
 }
 
-/* ライトモード（サブ垢） */
 .light-mode {
-    background-color: white;
-    color: black;
+    background-color: #fff;
+    color: #000;
 }
 
-/* アカウント名 */
+/* プロフィールエリア */
+.profile {
+    display: none;
+}
+
+.profile.active {
+    display: block;
+}
+
+/* アカウント名（h1）のフォントサイズ */
 h1 {
-    font-size: 2rem; /* 小さめに調整 */
+    font-size: 2rem; /* 一番大きい */
     font-weight: bold;
-    margin-bottom: 0.5em;
+    margin-bottom: 16px;
 }
 
-/* プロフィールのテキスト */
-.profile-text {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-
-/* リンク */
-a {
-    text-decoration: none; /* 下線なし */
-    color: inherit; /* 本文と同じ色 */
+/* プロフィール文 */
+.profile p {
     font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 24px;
 }
 
-/* クリックしてもリンクの色を変えない */
-a:visited, a:active {
+/* リンクのスタイル（通常のテキストと同じ） */
+.no-style {
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    color: inherit;
+    display: block; /* 別の行にする */
+    margin-bottom: 16px;
+}
+
+.no-style:visited,
+.no-style:hover,
+.no-style:focus {
     color: inherit;
 }
 
-/* ボタン */
-#switchButton {
-    display: block;
-    background: none;
-    border: none;
+/* ボタンのスタイル（リンクと同じ感じ） */
+button {
+    all: unset;
     font-size: 1rem;
     cursor: pointer;
-    color: inherit;
-    margin-top: 1.5em;
-}
-
-/* ボタンとリンクの間隔 */
-.spacer {
-    height: 20px; /* 空白 */
+    display: block;
+    text-align: left;
+    width: fit-content;
+    margin-top: 24px;
 }
