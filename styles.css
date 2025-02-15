@@ -1,10 +1,10 @@
 /* Apple公式サイトっぽいフォント */
-@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 body {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
-    padding: 80px 20px 20px; /* 上に余白を追加してタブと被らないように */
+    padding: 80px 20px 20px; /* 上の余白を増やしてタブと被らないように */
     background-color: black; /* デフォルトはダークモード */
     color: white;
     height: 100vh;
@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: flex-start; /* 上揃え */
     align-items: flex-start;
-    overflow: hidden; /* スクロール無効化 */
+    overflow: hidden; /* スクロールを無効化 */
 }
 
 /* ライトモード（サブ垢） */
@@ -23,7 +23,7 @@ body {
 
 /* アカウント名 */
 h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* 少し小さめに調整 */
     font-weight: bold;
     margin-bottom: 15px; /* プロフィールとの間隔 */
 }
@@ -32,7 +32,14 @@ h1 {
 .profile-text {
     font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 25px; /* リンクとの間隔 */
+    margin-bottom: 25px; /* リンクとの間隔を広めに */
+}
+
+/* リンクをまとめるコンテナ */
+.link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* リンクの間隔を統一（狭め） */
 }
 
 /* リンクのスタイル（見た目は普通のテキスト） */
@@ -47,11 +54,6 @@ a:visited, a:active {
     color: inherit;
 }
 
-/* リンクの間隔を詰める */
-p {
-    margin: 3px 0; /* 上下3pxの最小限の間隔 */
-}
-
 /* ボタン（見た目は普通のテキスト） */
 button {
     font-size: 1rem;
@@ -62,8 +64,8 @@ button {
     cursor: pointer;
     padding: 0;
     text-align: left;
-    display: block; /* 左揃え */
-    margin-top: 40px; /* リンクとの間隔 */
+    display: block; /* 1つずつ改行 */
+    margin-top: 30px; /* ボタンをもう少し下げる */
 }
 
 button:focus {
