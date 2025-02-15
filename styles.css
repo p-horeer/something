@@ -4,7 +4,7 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
-    padding: 40px 20px 20px; /* 上の余白を調整 */
+    padding: 20px 20px 20px; /* 上の余白を調整 */
     background-color: black;
     color: white;
     min-height: 100vh; /* スマホのアドレスバー対策 */
