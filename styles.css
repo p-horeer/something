@@ -23,15 +23,13 @@ body {
 
 /* アカウント名 */
 h1 {
-    font-size: 10rem;
-    font-weight: bold;
+    font-size: 5rem;
     margin-bottom: 25px; /* プロフィールとの間隔 */
 }
 
 /* プロフィール */
 .profile-text {
-    font-size: 5rem;
-    font-weight: bold;
+    font-size: 2rem;
     margin-bottom: 25px; /* リンクとの間隔を広めに */
 }
 
