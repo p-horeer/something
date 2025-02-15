@@ -1,82 +1,67 @@
-/* Apple公式のフォント */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Apple公式サイトっぽいフォント */
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;700&display=swap');
 
 body {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    overflow: hidden; /* スクロール禁止 */
+    font-family: 'SF Pro Display', sans-serif;
+    margin: 0;
+    padding: 60px 20px 20px; /* 上に余白を作ってタブと被らないように */
+    background-color: black; /* デフォルトはダークモード */
+    color: white;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; /* 上揃え */
     align-items: flex-start;
-    height: 100vh;
-    padding: 20px; /* 左上の余白 */
+    overflow: hidden; /* スクロールを無効化 */
 }
 
-/* ダークモードとライトモード */
-.dark-mode {
-    background-color: #000;
-    color: #fff;
-}
-
+/* ライトモード（サブ垢） */
 .light-mode {
-    background-color: #fff;
-    color: #000;
+    background-color: white;
+    color: black;
 }
 
-/* プロフィールエリア */
-.profile {
-    display: none;
-}
-
-.profile.active {
-    display: block;
-}
-
-/* アカウント名（h1） */
+/* アカウント名 */
 h1 {
-    font-size: 2rem; /* ちょっと小さめに */
+    font-size: 2rem; /* 小さめに調整 */
     font-weight: bold;
-    margin-bottom: 12px; /* プロフィールとの間隔 */
+    margin-bottom: 10px; /* プロフィールとの間隔 */
 }
 
-/* プロフィール文 */
-.profile p {
+/* プロフィール */
+p {
     font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 24px; /* リンクとの間隔を確保 */
+    margin-bottom: 20px; /* リンクとの間隔 */
 }
 
-/* リンクのスタイル */
-.no-style {
+/* リンクのスタイル（見た目は普通のテキスト） */
+a {
     font-size: 1rem;
-    font-weight: normal;
     text-decoration: none;
     color: inherit;
-    display: block; /* 縦に並べる */
-    margin-bottom: 8px; /* TwitterとInstagramの間隔 */
+    display: block; /* 1つずつ改行 */
+    margin-bottom: 5px; /* Twitterとインスタの間隔を最小限に */
 }
 
-.no-style:visited,
-.no-style:hover,
-.no-style:focus {
+a:visited, a:active {
     color: inherit;
 }
 
-/* ボタンのスタイル（完全に左揃え） */
+/* ボタン（見た目は普通のテキスト） */
 button {
-    all: unset;
     font-size: 1rem;
+    font-weight: normal;
+    background: none;
+    border: none;
+    color: inherit;
     cursor: pointer;
-    display: block;
+    padding: 0;
     text-align: left;
-    width: fit-content;
-    margin-top: 24px; /* リンクとの間隔 */
+    display: block; /* 1つずつ改行 */
+    margin-top: 20px; /* リンクとの間隔 */
+}
+
+button:focus {
+    outline: none;
 }
