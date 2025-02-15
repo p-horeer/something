@@ -1,4 +1,4 @@
-/* Apple公式のフォントを使用 */
+/* Apple公式のフォント */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 * {
@@ -17,10 +17,10 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     height: 100vh;
-    padding: 20px;
+    padding: 20px; /* 左上の余白 */
 }
 
-/* ダークモードとライトモードの切り替え */
+/* ダークモードとライトモード */
 .dark-mode {
     background-color: #000;
     color: #fff;
@@ -40,28 +40,28 @@ body {
     display: block;
 }
 
-/* アカウント名（h1）のフォントサイズ */
+/* アカウント名（h1） */
 h1 {
-    font-size: 2rem; /* 一番大きい */
+    font-size: 2rem; /* ちょっと小さめに */
     font-weight: bold;
-    margin-bottom: 16px;
+    margin-bottom: 12px; /* プロフィールとの間隔 */
 }
 
 /* プロフィール文 */
 .profile p {
     font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 24px;
+    margin-bottom: 24px; /* リンクとの間隔を確保 */
 }
 
-/* リンクのスタイル（通常のテキストと同じ） */
+/* リンクのスタイル */
 .no-style {
     font-size: 1rem;
     font-weight: normal;
     text-decoration: none;
     color: inherit;
-    display: block; /* 別の行にする */
-    margin-bottom: 16px;
+    display: block; /* 縦に並べる */
+    margin-bottom: 8px; /* TwitterとInstagramの間隔 */
 }
 
 .no-style:visited,
@@ -70,7 +70,7 @@ h1 {
     color: inherit;
 }
 
-/* ボタンのスタイル（リンクと同じ感じ） */
+/* ボタンのスタイル（完全に左揃え） */
 button {
     all: unset;
     font-size: 1rem;
@@ -78,5 +78,5 @@ button {
     display: block;
     text-align: left;
     width: fit-content;
-    margin-top: 24px;
+    margin-top: 24px; /* リンクとの間隔 */
 }
