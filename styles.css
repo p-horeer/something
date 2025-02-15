@@ -32,16 +32,16 @@ h1 {
 p {
     font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 15px; /* リンクとの間隔 */
+    margin-bottom: 15px; /* プロフィールとリンクの間隔 */
 }
 
-/* リンクのスタイル（見た目は普通のテキスト） */
+/* リンクのスタイル（間隔を詰める） */
 a {
     font-size: 1rem;
     text-decoration: none;
     color: inherit;
     display: block; /* 1つずつ改行 */
-    margin-bottom: 8px; /* リンクの間隔を少し開ける */
+    margin-bottom: 0; /* 間隔を詰める */
 }
 
 a:visited, a:active {
@@ -65,4 +65,3 @@ button {
 button:focus {
     outline: none;
 }
-
