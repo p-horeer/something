@@ -4,7 +4,7 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
-    padding: 50px 20px 20px; /* 上の余白を調整 */
+    padding: 40px 20px 20px; /* 上の余白を調整 */
     background-color: black;
     color: white;
     min-height: 100vh; /* スマホのアドレスバー対策 */
@@ -23,14 +23,14 @@ body {
 
 /* アカウント名 */
 h1 {
-    font-size: 3rem; /* 小さくして全体を収める */
-    margin-bottom: 15px; /* プロフィールとの間隔を少し狭く */
+    font-size: 2.5rem; /* 小さくして全体を収める */
+    margin-bottom: 10px; /* プロフィールとの間隔を少し狭く */
 }
 
 /* プロフィール */
 .profile-text {
     font-size: 1.5rem; /* 少し小さめに */
-    margin-bottom: 15px; /* リンクとの間隔を少し狭く */
+    margin-bottom: 10px; /* リンクとの間隔を少し狭く */
 }
 
 /* リンクをまとめるコンテナ */
