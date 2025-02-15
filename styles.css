@@ -39,7 +39,7 @@ h1 {
 .link-container {
     display: flex;
     flex-direction: column;
-    gap: 2px; /* リンクの間隔を統一（狭め） */
+    gap: 0px; /* リンクの間隔を統一（狭め） */
 }
 
 /* リンクのスタイル（見た目は普通のテキスト） */
